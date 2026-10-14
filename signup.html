@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar">
+        <a class="logo" href="index.html">♪ PLAYIT</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="signup-main">
+    <section class="signup-card">
+        <p class="signup-kicker">YOUR MUSIC. YOUR WAY.</p>
+        <h1>Create your account</h1>
+        <p class="signup-description">Join PLAYIT and find the soundtrack to your day.</p>
+        <form class="signup-form" action="#" method="get">
+            <label for="full-name">Your name</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Enter your name" autocomplete="name" required>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <label for="password">Create a password</label>
+            <input id="password" name="password" type="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" required>
+            <label class="terms-label"><input type="checkbox" name="terms" required> I agree to the terms and conditions.</label>
+            <button class="btn signup-submit" type="submit">Create account</button>
+        </form>
+        <p class="signup-note">This static HTML/CSS form does not create or store accounts.</p>
+        <p class="signup-back">Already exploring? <a href="browse.html">Browse music</a></p>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p>© 2026 PLAYIT. A student HTML & CSS project.</p>
+        <div class="footer-links"><a href="index.html">Home</a><a href="browse.html">Browse</a><a href="playlist.html">Playlist</a><a href="signup.html">Sign up</a></div>
+    </div>
+</footer>
+</body>
+</html>

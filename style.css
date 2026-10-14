@@ -1,0 +1,404 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background: #191414;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.site-header {
+    background: black;
+    padding: 18px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+}
+
+.logo {
+    color: #1DB954;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+   align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ddd;
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+.nav-links a:hover {
+    color: #1DB954;
+}
+
+main {
+    min-height: 70vh;
+}
+
+#hero {
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    background: #191414;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero-content h1 {
+    max-width: 720px;
+    font-size: clamp(2.8rem, 7vw, 5.8rem);
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    max-width: 650px;
+    color: white;
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #1DB954;
+    color: #000;
+    padding: 13px 24px;
+    border-radius: 999px;
+    border: 2px solid #1DB954;
+    font-weight: 800;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: #27d967;
+}
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 7%;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 280px;
+    background: #242424;
+    padding: 14px;
+    border-radius: 12px;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: #2d2d2d;
+}
+
+.card img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #aaa;
+    font-size: .92rem;
+}
+
+.search-box {
+    margin-top: 30px;
+    display: flex;
+    max-width: 600px;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    font-size: 1rem;
+}
+
+.page-banner {
+    padding: 70px 7% 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-banner h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.page-banner p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.playlist-layout {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 7%;
+}
+
+.playlist-header {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.playlist-cover {
+    width: 260px;
+    flex: 0 0 260px;
+}
+
+.playlist-cover img {
+    border-radius: 8px;
+    
+}
+
+.playlist-info h1 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.playlist-info p {
+    color: #bbb;
+}
+
+.track-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.track-table th,
+.track-table td {
+    text-align: left;
+    padding: 16px 12px;
+    border-bottom: 1px solid #333;
+}
+
+.track-table th {
+    color: #aaa;
+    font-size: .85rem;
+    text-transform: uppercase;
+}
+
+.track-table tr:hover td {
+    background: #242424;
+}
+
+.play-btn {
+   margin-top: 10px;
+}
+
+.site-footer {
+    background: #000;
+    color: #aaa;
+    padding: 40px 7%;
+    margin-top: 50px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a:hover {
+    color: #1DB954;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        position: static;
+    }
+
+    .navbar,
+    .playlist-header {
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    #hero {
+        min-height: 470px;
+    }
+
+    .playlist-header {
+        flex-direction: column;
+    }
+
+    .playlist-cover {
+        width: min(280px, 100%);
+        flex-basis: auto;
+    }
+
+    .track-table th:nth-child(3),
+    .track-table td:nth-child(3) {
+        display: none;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+}
+
+.signup-main {
+      min-height:72vh;
+      padding:60px 7%; 
+      display:flex; 
+      justify-content:center; 
+      align-items:center; 
+      background:#191414
+    }
+.signup-card { 
+    width:100%; 
+    max-width:520px; 
+    padding:38px; 
+    border:1px solid #383838; 
+    border-radius:16px; 
+    background:#242424; 
+}
+.signup-kicker { 
+    color:#1DB954; 
+    font-size:.8rem; 
+    font-weight:800; 
+    letter-spacing:2px; 
+    margin-bottom:8px; 
+}
+.signup-card h1 { 
+    font-size:clamp(2rem, 5vw, 2.8rem); 
+    line-height:1.15; 
+}
+.signup-description, .signup-note { 
+    color:#aaa; 
+    margin-top:10px; 
+}
+.signup-form { 
+    display:flex; 
+    flex-direction:column; 
+    gap:10px; 
+    margin-top:26px; 
+}
+.signup-form > label { 
+    font-weight:700; 
+    margin-top:5px; 
+}
+.signup-form input:not([type="checkbox"]) { 
+    width:100%; 
+    padding:13px 14px; 
+    border:1px solid #555; 
+    border-radius:8px; 
+    background:#111; 
+    color:#fff; 
+    font:inherit; 
+}
+.signup-form input:focus { 
+    outline:2px solid #1DB954; 
+    border-color:#1DB954; 
+}
+.signup-form .terms-label { 
+    display:flex; 
+    align-items:flex-start; 
+    gap:10px; color:#ccc; 
+    font-size:.92rem; 
+    font-weight:400; 
+    margin:8px 0; 
+}
+.terms-label input { 
+    margin-top:5px; 
+    accent-color:#1DB954; 
+}
+.signup-submit { 
+    width:100%; 
+    cursor:pointer; 
+    font:inherit; 
+    margin-top:8px; 
+}
+.signup-note { 
+    font-size:.8rem; 
+    line-height:1.5; 
+    margin-top:18px;
+ }
+.signup-back { 
+    text-align:center; 
+    margin-top:20px; 
+}
+.signup-back a { 
+    color:#1DB954; 
+    font-weight:700; 
+}
+.signup-back a:hover { 
+    text-decoration:underline; 
+}
+@media (max-width:500px) { 
+    .signup-card { 
+        padding:25px 20px; 
+    } 
+}
